@@ -1,0 +1,44 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: springcloud-provider-payment
+  #  sleuth:
+  #    sampler:
+  #      probability: 1
+  #  zipkin:
+  #    base-url: http://localhost:9411
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+#  security:
+#    user:
+#      name: actuator
+#      password: actuator
+#      roles: ACTUATOR_ADMIN
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/,http://wangxin:wangxin@localhost:7002/eureka/
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

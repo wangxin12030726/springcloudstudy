@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangxin.springcloud.dao.AccountDao">
+    <select id="findAll" resultType="com.wangxin.springcloud.entities.Account">
+      select * from account
+    </select>
+    <insert id="add" parameterType="com.wangxin.springcloud.entities.Account">
+        insert into account(name,balance) values(#{name},#{balance})
+    </insert>
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from account where 1=1 and id=#{id}
+    </delete>
+</mapper>

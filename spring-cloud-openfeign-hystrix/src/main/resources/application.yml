@@ -1,0 +1,14 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: spring-cloud-openfeign-hystrix
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+  instance:
+    prefer-ip-address: true

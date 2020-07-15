@@ -1,0 +1,18 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: wangxin
+      password: wangxin
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: eureka-server7002
+  client:
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/
+    register-with-eureka: true
+    fetch-registry: true

@@ -1,0 +1,20 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: wangxin
+      password: wangxin
+eureka:
+  instance:
+    hostname: eureka-server7001
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true #表示不用将自己注册到eureka注册中心
+    fetch-registry: true #表示自己端就是注册中心，职责就是维护服务实例，不用检索服务
+    service-url:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://wangxin:wangxin@localhost:7002/eureka/
+

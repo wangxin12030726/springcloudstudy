@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springcloud-order-consumer8080
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http;//localhost:7002/eureka/
+  instance:
+    prefer-ip-address: true

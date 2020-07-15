@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-openfeign-hystrix" />
+        <module name="springboot-profile" />
+        <module name="springcloud-common-api" />
+        <module name="springcloud-eureka7001" />
+        <module name="springcloud-eureka7002" />
+        <module name="springcloud-order-consumer8080" />
+        <module name="springcloud-order-feignhystirx8080" />
+        <module name="springcloud-provider-payment8001" />
+        <module name="springcloud-provider-payment8003" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-provider-payment8002" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

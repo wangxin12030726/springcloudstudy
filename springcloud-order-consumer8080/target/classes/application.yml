@@ -8,6 +8,17 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:7001/eureka/,http;//localhost:7002/eureka/
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/,http://wangxin:wangxin@localhost:7002/eureka/
   instance:
     prefer-ip-address: true
+management:
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

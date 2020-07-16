@@ -1,0 +1,13 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: springcloud-gateway-zuul
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true

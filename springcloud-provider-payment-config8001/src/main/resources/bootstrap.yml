@@ -9,3 +9,8 @@ spring:
       name: springcloud-provider-payment
       label: master
       profile: dev
+  rabbitmq:
+    host: 192.168.1.4
+    port: 5672
+    username: guest
+    password: guest

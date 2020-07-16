@@ -18,6 +18,12 @@
         <module>springcloud-order-feignhystirx8080</module>
         <module>spring-cloud-openfeign-hystrix</module>
         <module>springcloud-provider-payment8003</module>
+        <module>springcloud-hystrix-dashboard</module>
+        <module>springcloud-gateway-zuul</module>
+        <module>springcloud-config-server</module>
+        <module>springcloud-order-feighhystrix-config</module>
+        <module>springcloud-provider-payment-config8001</module>
+        <module>springcloud-config-client</module>
     </modules>
 
     <properties>

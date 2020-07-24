@@ -24,11 +24,14 @@
         <module>springcloud-order-feighhystrix-config</module>
         <module>springcloud-provider-payment-config8001</module>
         <module>springcloud-config-client</module>
+        <module>springcloud-hystrix-turbine</module>
+        <module>springcloud-admin-server6666</module>
+        <module>springcloud-test</module>
     </modules>
 
     <properties>
         <springcloud-common-api.version>1.0-SNAPSHOT</springcloud-common-api.version>
-
+        <spring-boot-admin.version>2.2.2.RELEASE</spring-boot-admin.version>
     </properties>
 
     <dependencyManagement>
@@ -37,6 +40,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>2.2.2.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-dependencies</artifactId>
+                <version>2.2.4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -1,0 +1,13 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: springcloud-test
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/

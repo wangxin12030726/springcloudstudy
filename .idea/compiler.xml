@@ -8,17 +8,31 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-openfeign-hystrix" />
         <module name="springboot-profile" />
+        <module name="springcloud-admin-sample" />
+        <module name="springcloud-admin-server6666" />
         <module name="springcloud-common-api" />
+        <module name="springcloud-config-client" />
+        <module name="springcloud-config-server" />
         <module name="springcloud-eureka7001" />
         <module name="springcloud-eureka7002" />
+        <module name="springcloud-gateway-zuul" />
+        <module name="springcloud-hystrix-dashboard" />
+        <module name="springcloud-hystrix-turbine" />
         <module name="springcloud-order-consumer8080" />
+        <module name="springcloud-order-feighhystrix-config" />
         <module name="springcloud-order-feignhystirx8080" />
+        <module name="springcloud-provider-payment-config8001" />
         <module name="springcloud-provider-payment8001" />
         <module name="springcloud-provider-payment8003" />
+        <module name="springcloud-test" />
+        <module name="springcloud-zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="springcloud-admin-sample" target="1.5" />
+      <module name="springcloud-admin-sample-server" target="1.5" />
       <module name="springcloud-provider-payment8002" target="1.5" />
+      <module name="springcloud-zipkin-server" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,13 @@
+server:
+  port: 6677
+eureka:
+  client:
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: springboot-admin-server

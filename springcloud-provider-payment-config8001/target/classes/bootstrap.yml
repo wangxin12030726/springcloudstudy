@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: springcloud-provider-payment
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: springcloud-provider-payment
+      label: master
+      profile: dev
+  rabbitmq:
+    host: 192.168.1.4
+    port: 5672
+    username: guest
+    password: guest

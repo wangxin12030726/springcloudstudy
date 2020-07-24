@@ -1,0 +1,21 @@
+server:
+  port: 7080
+spring:
+  application:
+    name: springcloud-hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://wangxin:wangxin@localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: spring-cloud-order-fengin-hystrix,spring-cloud-order-fengin-hystrix8083
+  cluster-name-expression: "'default'"
+#  aggregator:
+#    cluster-config: SPRING-CLOUD-ORDER-FENGIN-HYSTRIX8083
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -9,7 +9,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/springcloud-admin-sample-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-admin-sample/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-provider-payment8002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zipkin-server/pom.xml" />
       </set>
     </option>
   </component>

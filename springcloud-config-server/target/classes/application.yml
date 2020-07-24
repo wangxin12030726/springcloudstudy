@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangxin12030726/spring-cloud-config-server
+          username: 18910259163@163.com
+          password: zj19871203WX@
+          clone-on-start: true
+  rabbitmq:
+    host: 192.168.1.4
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

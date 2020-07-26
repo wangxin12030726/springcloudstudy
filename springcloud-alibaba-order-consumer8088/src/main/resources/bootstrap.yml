@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springcloud-alibaba-order-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848 #配置中心的地址
+        file-extension: yaml #文件后缀
+        #group namespace
+        group: WX_GROUP
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
